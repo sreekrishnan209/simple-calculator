@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <link rel="icon" href="https://www.freeiconspng.com/uploads/calculator-icon-4.png">
+</head>
+<body>
+  <div class="heading">
+    <h2>CALCULATOR</h2>
+  </div>
+  <div class="container-fluid">
+    <div class="calculator">
+      <input type="text" id="result" readonly>
+      <table>
+        <tr>
+            <td><button class="remove" onclick="clearResult()">AC</button>
+            <td><button onclick="appendOperator('%')">%</button></td>
+            <td><button class="dt" onclick="removeButton('dlt')">&#9003</button></td>
+            <td><button onclick="appendOperator('/')">&#247</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="appendNumber('7')">7</button></td>
+          <td><button onclick="appendNumber('8')">8</button></td>
+          <td><button onclick="appendNumber('9')">9</button></td>
+          <td><button onclick="appendOperator('*')">&#215</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="appendNumber('4')">4</button></td>
+          <td><button onclick="appendNumber('5')">5</button></td>
+          <td><button onclick="appendNumber('6')">6</button></td>
+          <td><button onclick="appendOperator('-')">-</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="appendNumber('1')">1</button></td>
+          <td><button onclick="appendNumber('2')">2</button></td>
+          <td><button onclick="appendNumber('3')">3</button></td>
+          <td><button class="plus" onclick="appendOperator('+')">+</button></td>
+        </tr>
+        <tr>
+          <td><button class="zero" onclick="appendNumber('00')">00</button></td>
+          <td><button onclick="appendNumber('0')">0</button></td>
+          <td><button onclick="appendOperator('.')">.</button></td>
+          <td><button onclick="calculateResult()">=</button></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  
+</body>
+
+<script>
+
+    function appendNumber(num){
+        result.value+=num
+    }
+
+    function clearResult(){
+        result.value=""
+    }
+
+    function calculateResult(){
+        result.value=eval(result.value)
+    }
+
+    function appendOperator(num1){
+        result.value+=num1
+    }
+    function calculatePercentage(num2){
+        result.value+=num1
+    }
+    
+    function removeButton(){
+        rem=result.value
+        result.value=rem.slice(0,-1)
+    }
+ 
+
+
+
+</script>
+</html>

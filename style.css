@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+   /* background: url(./IMAGES/img.jpg); */
+   background-color:black;
+  }
+  
+  .calculator {
+    width: 260px;
+    margin: 0 auto;
+    padding: 32px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    margin-left: 602px;
+  }
+  
+  table {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 50%;
+  }
+  
+  td {
+    text-align: center;
+    padding: 5px;
+  }
+  
+  button {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    margin: 5px;
+    border-radius: 50px;
+    border: 1px solid white;
+  }
+  
+  #result {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    text-align: right;
+    font-weight:bold ;
+    font-size: 25px;
+  }
+ .remove{
+  width: 40px
+}
+.heading{
+ font-size: 33px;
+    color: rgb(216, 212, 212);
+    text-align: center;
+}
+@media only screen and (min-width:300px) and (max-width:1024px){
+    .calculator{
+      width: 37rem;
+      margin: 0 auto;
+      padding: 32px;
+      border: 1px solid black;
+      border-radius: 5px;
+      background-color: #003235;
+      height: 47rem;
+      margin-top: 16rem;
+    }
+    #result {
+      width: 100%;
+    height: 83px;
+    margin-bottom: 55px;
+    text-align: right;
+    margin-top: 21px;
+    font-weight:bold ;
+    font-size: 46px;
+  }
+  button {
+    width: 80px;
+    height: 80px;
+    font-size: 49px;
+    border-radius: 50px;
+    border: 1px solid white;
+    margin-top: 17px;
+}
+.remove {
+  width: 80px;
+}
+}
